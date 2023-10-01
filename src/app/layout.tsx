@@ -23,8 +23,8 @@ export default function RootLayout({
           <Navbar />
           <main className='min-h-screen'>
             {children}
-        </main>
-        <Subscribe />
+          </main>
+          <Subscribe />
           <Footer />
       </body>
     </html>
