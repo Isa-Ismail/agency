@@ -57,7 +57,7 @@ export default async function Home() {
               <img className='w-[10] h-[10rem]' alt='' src="Work.jpg" />
               <p className='text-xl font-bold'>{item.title}</p>
               <p className='text-lg text-center'>{item.des}</p>
-              <p>Learn More -></p>
+              <p>Learn More {"->"}</p>
             </div>
           ))}
         </div>
