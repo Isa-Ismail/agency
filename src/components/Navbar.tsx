@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface Props {}
@@ -9,11 +10,11 @@ const Navbar:React.FC<Props> = () => {
                 <h1 className='py-6 px-6 font-extrabold text-2xl'>Design<span className='text-red-500'>AGENCY</span></h1>
                 <div className='hidden lg:flex'>
                     <ul className='flex'>
-                        <li className='py-6 px-6 text-xl'>Home</li>
-                        <li className='py-6 px-6 text-xl'>Team</li>
-                        <li className='py-6 px-6 text-xl'>Services</li>
-                        <li className='py-6 px-6 text-xl'>Projects</li>
-                        <li className='py-6 px-6 text-xl'>Testimonials</li>
+                        <li className='py-6 px-6 text-xl'><Link href='/'>Home</Link></li>
+                        <li className='py-6 px-6 text-xl'><Link href='/team'>Team</Link></li>
+                        <li className='py-6 px-6 text-xl'><Link href='/service'>Services</Link></li>
+                        <li className='py-6 px-6 text-xl'><Link href='/project'>Projects</Link></li>
+                        <li className='py-6 px-6 text-xl'><Link href='/testimonial'>Testimonials</Link></li>
                         <li className='py-6 px-6 text-xl'><span className='border-solid border-2 py-2 px-3 border-green-500 rounded-md'>Login</span></li>
                         <li className='py-6 px-6 text-xl'><span className='py-3 px-3 text-white bg-green-500 rounded-md'>Register</span></li>
                     </ul>

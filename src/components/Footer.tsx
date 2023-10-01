@@ -15,14 +15,14 @@ const Footer:React.FC<Props> = () => {
                   <img src="/Frame 20095.jpg" alt="dw" />
                 </div>
         </div>
-          <div className='flex flex-1 flex-col text-white'>
+          <div className='flex flex-1 md:pr-[10rem] flex-col text-white'>
               <h1 className='text-3xl'>Quick Links</h1>
               <p className='text-white py-6'>Services</p>
               <p className='text-white py-6'>Portfolio</p>
               <p className='text-white py-6'>About us</p>
               <p className='text-white py-6'>Contact us</p>
         </div>
-          <div className='flex flex-col'>
+          <div className='flex flex-col md:pr-[10rem]'>
               <h1 className='text-3xl text-white'>Address</h1>
               <p className='text-white py-3'>Design Agency Head Office</p>
               <p className='text-white py-3'>Airport Road</p>
