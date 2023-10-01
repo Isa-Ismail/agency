@@ -11,11 +11,11 @@ export default async function Home() {
   const data3 = await res3.json()
   console.log(data3)
   
-  const res4 = await fetch('https://agency.teamrabbil.com/api/HeroList')
+  const res4 = await fetch('https://agency.teamrabbil.com/api/FeaturedProject')
   const data4 = await res4.json()
   console.log(data4)
 
-  const res5 = await fetch('https://agency.teamrabbil.com/api/HeroList')
+  const res5 = await fetch('https://agency.teamrabbil.com/api/StatList')
   const data5 = await res5.json()
   console.log(data5)
 
@@ -51,6 +51,54 @@ export default async function Home() {
       <div className='px-20 py-20 space-y-4'>
         <h1 className='font-bold text-2xl text-green-500'>WORK LIST</h1>
         <p className="text-4xl font-bold">We provide the Perfect Solution to your business growth</p>
+        <div className="md:grid grid-cols-3 md:ml-[10rem] place text-center mx-auto">
+          {data3.map((item: any) => (
+            <div className='flex flex-col w-[200px] space-y-4 items-center pt-10'>
+              <img className='w-[10] h-[10rem]' alt='' src="Work.jpg" />
+              <p className='text-xl font-bold'>{item.title}</p>
+              <p className='text-lg text-center'>{item.des}</p>
+              <p>Learn More -></p>
+            </div>
+          ))}
+        </div>
+        <div className="pt-[6rem] flex flex-wrap justify-center gap-4">
+          <div className="shadow-md p-10 rounded-xl flex flex-col justify-center items-center">
+            <img className='w-[4rem] h-[4rem]' alt='' src="Work.jpg" />
+            <p className='text-xl font-bold'>{ data5.followers }</p>
+            <p className='text-lg break-words w-[180px] text-center'>Followers</p>
+          </div>
+          <div className="shadow-md p-10 rounded-xl flex flex-col justify-center items-center">
+            <img className='w-[4rem] h-[4rem]' alt='' src="Work.jpg" />
+            <p className='text-xl font-bold'>{ data5.solved }</p>
+            <p className='text-lg break-words w-[180px] text-center'>Solved Problems</p>
+          </div>
+          <div className="shadow-md p-10 rounded-xl flex flex-col justify-center items-center">
+            <img className='w-[4rem] h-[4rem]' alt='' src="Work.jpg" />
+            <p className='text-xl font-bold'>{ data5.customers }</p>
+            <p className='text-lg text-center w-[180px]'>Happy Customers</p>
+          </div>
+          <div className="shadow-md p-10 rounded-xl flex flex-col justify-center items-center">
+            <img className='w-[4rem] h-[4rem]' alt='' src="Work.jpg" />
+            <p className='text-xl font-bold'>{ data5.projects }</p>
+            <p className='text-lg text-center w-[180px]'>Projects</p>
+          </div>
+        </div>
+      </div>
+      <div className="px-20 py-20 space-y-4 min-h-[50rem] bg-[#D7F5DC]">
+        <div>
+          <h1 className="font-bold text-2xl text-green-500">FEATURED PROJECT</h1>
+          <p className="text-2xl font-bold">We provide the Perfect Solution to your business growth</p>
+        </div>
+        <div className="flex gap-6 flex-wrap justify-center">
+          {
+            data4.map((item: any) => (
+              <div className="flex flex-col justify-center items-center">
+                <img className='shadow-md rounded-xl w-[15rem] h-[15rem]' alt='' src={item.image} />
+                <p className='text-xl break-words w-[200px]'>{ item.title }</p>
+              </div>
+            ))
+           }
+        </div>
       </div>
     </div>
   )
