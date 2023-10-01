@@ -84,8 +84,8 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="px-20 py-20 space-y-4 min-h-[50rem] bg-[#D7F5DC]">
-        <div>
+      <div className="px-20 py-20 space-y-6 min-h-[50rem] bg-[#D7F5DC]">
+        <div className="space-y-6">
           <h1 className="font-bold text-2xl text-green-500">FEATURED PROJECT</h1>
           <p className="text-2xl font-bold">We provide the Perfect Solution to your business growth</p>
         </div>

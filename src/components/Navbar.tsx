@@ -7,7 +7,7 @@ const Navbar:React.FC<Props> = () => {
     return (
         <nav className="bg-[#D7F5DC] w-full h-[80px]">
             <div className='flex mx-10 justify-between'>
-                <h1 className='py-6 px-6 font-extrabold text-2xl'>Design<span className='text-red-500'>AGENCY</span></h1>
+                <h1 className='py-6 px-6 font-extrabold text-2xl'><Link href='/'>Design<span className='text-red-500'>AGENCY</span></Link></h1>
                 <div className='hidden lg:flex'>
                     <ul className='flex'>
                         <li className='py-6 px-6 text-xl'><Link href='/'>Home</Link></li>
