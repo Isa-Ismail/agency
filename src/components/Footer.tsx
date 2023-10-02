@@ -18,7 +18,7 @@ const Footer:React.FC<Props> = () => {
             </div>
           </div>
           <div className='flex flex-1 flex-col text-white'>
-              <h1 className='text-3xl'>Quick Links</h1>
+              <h1 className='text-3xl pb-10'>Quick Links</h1>
               <p className='text-white py-4'>Services</p>
               <p className='text-white py-4'>Portfolio</p>
               <p className='text-white py-4'>About us</p>
