@@ -5,8 +5,8 @@ interface Props {}
 const Footer:React.FC<Props> = () => {
   return (
     <footer className='bg-black md:flex text-center justify-evenly min-h-[30rem] items-start p-20'>
-          <div className='md:flex text-center md:flex-col justify-center'>
-            <div>
+          <div className='flex text-center flex-col items-center'>
+            <div className='flex flex-col justify-center'>
               <h1 className='text-5xl text-white pb-6'>WEB LOGO</h1>
               <p className='text-white break-words w-[300px] py-4'>Some footer text about the Agency. Just a little description to help people understand you better</p>
             </div>
