@@ -25,7 +25,7 @@ const Footer:React.FC<Props> = () => {
               <p className='text-white py-4'>Contact us</p>
           </div>
           <div className='flex flex-col'>
-              <h1 className='text-3xl text-white'>Address</h1>
+              <h1 className='text-3xl pb-10 text-white'>Address</h1>
               <p className='text-white py-3'>Design Agency Head Office</p>
               <p className='text-white py-3'>Airport Road</p>
               <p className='text-white py-3'>United Arab Emirates</p>
